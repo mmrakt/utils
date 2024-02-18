@@ -12,7 +12,7 @@ ghq get "$repo_url"
 repo_name=$(echo "$repo_url" | sed -e 's~^https://github.com/~~' -e 's~.git$~~')
 user_name=$(whoami)
 
-cd "/Users/$user_name/workspaces/github.com/$repo_name"
+cd "/Users/$user_name/ghq/github.com/$repo_name"
 
 echo
 
